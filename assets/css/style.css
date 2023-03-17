@@ -1,5 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap'); */
 
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
 
 * {
     margin: 0;
@@ -35,11 +39,18 @@ body {
     scroll-behavior: smooth;
     box-sizing: border-box;
     font-family: Inter, sans-serif;
+    font-size: 1rem;
+    color: #fff;
 }
 
+/* home section */
+
 .home-section {
+    position: fixed;
     width: 100%;
-    height: 90vh;
+    z-index: -1;
+    height: 93vh;
+    background-attachment: fixed;
     /* background: red; */
     /* background: url(../video/home-section.mp4); */
 }
@@ -49,4 +60,115 @@ body {
     min-height: 90vh;
     position: fixed;
     top: -100px;
+    z-index: -1;
+}
+.home-text {
+    width: 96%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 2%;
+    /* margin-top: 0; */
+    /* z-index: 99999999; */
+}
+.home-hedding-text{
+    font-size: 15vw;
+    font-weight: 500;
+}
+.hr-home-line{
+    content: '';
+    background: #fff;
+    height: 18px;
+    width: 70%;
+}
+
+.home-sub-headding-text {
+    width: 400px;
+    position: absolute;
+    bottom: 90px;
+    right: 300px;
+    /* font-weight: 500; */
+}
+.home-sub-headding-text h3{
+    font-weight: 400;
+    font-size: 2rem;
+}
+
+
+/* header section */
+
+.main-body-secton{
+    z-index: 99;
+    padding-top: 90vh;
+}
+.main-header{
+    background: #151515;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.main-header.fixed-top{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.nav-line{
+    width: 40px;
+    height: 2px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+    background: #fff;
+    content: '';
+}
+.nav-line:last-child{
+    margin-bottom: 0;
+}
+.logo svg{
+    fill: #fff;
+}
+
+
+/* Second section */
+/* .main-body-secton{
+    
+    background: #151515;
+} */
+.second-section{
+    background: #151515;
+    padding: 200px 0px;
+}
+.second-section h1{
+    text-align: center;
+    font-size: 2.667rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+.animation-line{
+    content: '';
+    background: #ccb2ef;
+    height: 18px;
+    width: 400px;
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -2;
+    transition: ease-in-out .1s;
+}
+.animation-line.second-animation{
+    z-index: 2;
+}
+.animation-line.third-animation{
+    z-index: 2;
+    background: transparent;
+    padding: 110px 400px;
+    border: 20px solid #8343d8;
+    top: 25%;
+}
+.fourth-section{
+    background: #151515;
 }
