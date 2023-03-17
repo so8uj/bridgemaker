@@ -1,0 +1,52 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;800;900&display=swap'); */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h2,
+h3,
+h3 {
+    margin: 0;
+    /* font-family: 'Nunito', sans-serif; */
+
+}
+
+a {
+    text-decoration: none;
+}
+
+
+:root {
+    --color-a-light: #EC202A;
+    --color-a-dark: #6E0000;
+}
+
+body {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+
+.home-section {
+    width: 100%;
+    height: 90vh;
+    /* background: red; */
+    /* background: url(../video/home-section.mp4); */
+}
+
+.home-section video {
+    min-width: 100%;
+    min-height: 90vh;
+    position: fixed;
+    top: -100px;
+}
